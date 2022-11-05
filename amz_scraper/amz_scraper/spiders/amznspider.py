@@ -7,8 +7,8 @@ from scrapy.loader import ItemLoader
 
 class AmznspiderSpider(CrawlSpider):
     name = 'amznspider'
-    allowed_domains = ['amazon.com']
-    start_urls = ['https://amazon.com/s?k=laptop']
+    allowed_domains = ['amazon.com', 'amazon.co.uk']
+    start_urls = ['https://amazon.com/s?k=laptop', 'https://amazon.co.uk/s?k=laptop']
 
     rules = (
         Rule(LinkExtractor(allow='s?k=laptop&page=', restrict_css="a.s-pagination-next")),
