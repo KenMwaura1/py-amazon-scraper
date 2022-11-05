@@ -39,7 +39,7 @@ DOWNLOAD_DELAY = 3
 DEFAULT_REQUEST_HEADERS = {
     'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
     'Accept-Language': 'en',
-    'User-Agent': 'Mozilla/6.0',
+    'User-Agent': 'Mozilla/5.0',
 }
 
 # Enable or disable spider middlewares

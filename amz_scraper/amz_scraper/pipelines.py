@@ -41,8 +41,8 @@ class AmzScraperPipeline:
 
     def process_item(self, item, spider):
         # Check to see if text is already in database
-        self.cur.execute("select * from amazon_data where content = %s", (item['name'],))
-        result =  1# self.cur.fetchone()
+        self.cur.execute("select * from amazon_data where name = %s", (item['name'],))
+        result = self.cur.fetchone()
 
         # If it is in DB, create log message
         if result:
