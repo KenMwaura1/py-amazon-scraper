@@ -21,7 +21,7 @@ This project utilizes the Scrapy framework to scrape [amazon]() for data. Curren
 Clone the project
 
 ```bash
-  git clone https://github.com/KenMwaura1/py-amazon-scrape
+  git clone https://github.com/KenMwaura1/py-amazon-scraper
 ```
 
 Go to the project directory
