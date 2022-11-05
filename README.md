@@ -1,6 +1,8 @@
 
 # Python Amazon Scraper
 
+[![Python package](https://github.com/KenMwaura1/py-amazon-scraper/actions/workflows/pythonpackage.yml/badge.svg)](https://github.com/KenMwaura1/py-amazon-scraper/actions/workflows/pythonpackage.yml)
+
 This project utilizes the Scrapy framework to scrape [amazon]() for data. Currently, it retrieves laptop data(name, price and discount). However you can configure this as needed.
 
 ![Data Screenshot](images/amazon_data-pgadmin.png)
