@@ -1,7 +1,9 @@
 
 # Python Amazon Scraper
 
-This project utilizes the Scrapy framework to scrape [amazon]() for data. Currently it retrieves laptop data(name, price and discount). However you can configure this as needed.
+This project utilizes the Scrapy framework to scrape [amazon]() for data. Currently, it retrieves laptop data(name, price and discount). However you can configure this as needed.
+
+[![Data Screenshot](images/amazon_data-pgadmin.png)]
 
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
 
