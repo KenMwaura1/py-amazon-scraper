@@ -29,7 +29,7 @@ class AmzScraperItem(scrapy.Item):
         input_processor=MapCompose(remove_tags, strip_spaces),
         output_processor=TakeFirst()
     )
-    total_reviews = scrapy.Field(
+    totalreviews = scrapy.Field(
         input_processor=MapCompose(remove_tags, strip_spaces),
         output_processor=TakeFirst()
     )

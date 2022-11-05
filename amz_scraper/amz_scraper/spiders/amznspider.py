@@ -17,7 +17,7 @@ class AmznspiderSpider(CrawlSpider):
 
     def parse_item(self, response):
         l = ItemLoader(item=AmzScraperItem(), response=response)
-        l.add_css("name", "span#ProductTitle")
+        l.add_css("name", "span#productTitle")
         l.add_css("asin", "#ASIN::attr(value)")
         l.add_css("price", "span.a-offscreen")
         l.add_css("discounted", "span.savingsPercentage")
