@@ -19,13 +19,13 @@ This project utilizes the Scrapy framework to scrape [amazon]() for data. Curren
 Clone the project
 
 ```bash
-  git clone https://link-to-project
+  git clone https://github.com/KenMwaura1/py-amazon-scrape
 ```
 
 Go to the project directory
 
 ```bash
-  cd my-project
+  cd py_amazon_scraper
 ```
 
 Install dependencies
@@ -34,6 +34,10 @@ Install dependencies
   pip Install -r requirements
 ```
 
+Change into the project directory
+```bash
+  cd amz_scraper
+```
 Start the spider
 
 ```bash
