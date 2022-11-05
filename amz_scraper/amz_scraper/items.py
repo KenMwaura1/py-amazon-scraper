@@ -8,12 +8,28 @@ from itemloaders.processors import TakeFirst, MapCompose
 from w3lib.html import remove_tags
 
 
+def strip_spaces(value):
+    return value.strip().replace("$", "")
+
+
 class AmzScraperItem(scrapy.Item):
-   name = scrapy.Field(
-       input_processor=MapCompose(remove_tags),
-       output_processor=TakeFirst()
-   )
-   asin = scrapy.Field()
-   price = scrapy.Field()
-   discounted = scrapy.Field()
-   total_reviews = scrapy.Field()
+    name = scrapy.Field(
+        input_processor=MapCompose(remove_tags, strip_spaces),
+        output_processor=TakeFirst()
+    )
+    asin = scrapy.Field(
+        input_processor=MapCompose(remove_tags, strip_spaces),
+        output_processor=TakeFirst()
+    )
+    price = scrapy.Field(
+        input_processor=MapCompose(remove_tags, strip_spaces),
+        output_processor=TakeFirst()
+    )
+    discounted = scrapy.Field(
+        input_processor=MapCompose(remove_tags, strip_spaces),
+        output_processor=TakeFirst()
+    )
+    total_reviews = scrapy.Field(
+        input_processor=MapCompose(remove_tags, strip_spaces),
+        output_processor=TakeFirst()
+    )
