@@ -14,7 +14,7 @@ itemadapter==0.7.0
 itemloaders==1.0.6
 jmespath==1.0.1
 lxml==4.9.1
-packaging==21.3
+packaging==22.0
 parsel==1.7.0
 Protego==0.2.1
 psycopg2-binary==2.9.5
