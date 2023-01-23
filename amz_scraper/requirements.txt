@@ -24,7 +24,7 @@ pycparser==2.21
 PyDispatcher==2.0.6
 pyOpenSSL==23.0.0
 pyparsing==3.0.9
-python-dotenv==0.21.0
+python-dotenv==0.21.1
 queuelib==1.6.2
 requests==2.28.2
 requests-file==1.5.1
