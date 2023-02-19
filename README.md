@@ -1,9 +1,11 @@
 
 # Python Amazon Scraper
 
+[![Python package](https://github.com/KenMwaura1/py-amazon-scraper/actions/workflows/pythonpackage.yml/badge.svg)](https://github.com/KenMwaura1/py-amazon-scraper/actions/workflows/pythonpackage.yml)
+
 This project utilizes the Scrapy framework to scrape [amazon]() for data. Currently, it retrieves laptop data(name, price and discount). However you can configure this as needed.
 
-[![Data Screenshot](images/amazon_data-pgadmin.png)]
+![Data Screenshot](images/amazon_data-pgadmin.png)
 
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
 
@@ -21,7 +23,7 @@ This project utilizes the Scrapy framework to scrape [amazon]() for data. Curren
 Clone the project
 
 ```bash
-  git clone https://github.com/KenMwaura1/py-amazon-scrape
+  git clone https://github.com/KenMwaura1/py-amazon-scraper
 ```
 
 Go to the project directory
