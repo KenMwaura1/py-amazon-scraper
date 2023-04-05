@@ -17,7 +17,7 @@ lxml==4.9.2
 packaging==23.0
 parsel==1.7.0
 Protego==0.2.1
-psycopg2-binary==2.9.5
+psycopg2-binary==2.9.6
 pyasn1==0.4.8
 pyasn1-modules==0.2.8
 pycparser==2.21
