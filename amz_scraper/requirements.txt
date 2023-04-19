@@ -15,7 +15,7 @@ itemloaders==1.0.6
 jmespath==1.0.1
 lxml==4.9.2
 packaging==23.0
-parsel==1.7.0
+parsel==1.8.1
 Protego==0.2.1
 psycopg2-binary==2.9.6
 pyasn1==0.4.8
