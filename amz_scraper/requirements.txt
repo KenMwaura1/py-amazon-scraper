@@ -13,7 +13,7 @@ incremental==22.10.0
 itemadapter==0.8.0
 itemloaders==1.1.0
 jmespath==1.0.1
-lxml==4.9.2
+lxml==4.9.3
 packaging==23.1
 parsel==1.8.1
 Protego==0.2.1
