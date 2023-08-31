@@ -28,7 +28,7 @@ python-dotenv==1.0.0
 queuelib==1.6.2
 requests==2.31.0
 requests-file==1.5.1
-Scrapy==2.10.0
+Scrapy==2.10.1
 service-identity==23.1.0
 six==1.16.0
 tldextract==3.4.4
