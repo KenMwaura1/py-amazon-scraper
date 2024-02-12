@@ -7,7 +7,7 @@ on:
     branches: [ "dev","main" ]
 
 jobs:
-  db_setup:
+  db:
     runs-on: ubuntu-latest
     services:
       postgres:
@@ -24,7 +24,7 @@ jobs:
       - name: docker info
         run: docker version
   build:
-    needs: [db_setup]
+    needs: db
     runs-on: ubuntu-latest
     strategy:
       matrix:
