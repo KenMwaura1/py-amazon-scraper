@@ -21,8 +21,8 @@ jobs:
         
         options: --health-cmd pg_isready --health-interval 10s --health-timeout 5s 
     steps: 
-      - name: db_check
-        run: docker exec postgres pg_isready
+      - name: docker info
+        run: docker version
   build:
     needs: [db_setup]
     runs-on: ubuntu-latest
