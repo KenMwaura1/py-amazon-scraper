@@ -22,7 +22,7 @@ jobs:
     steps:
       - name: PostgreSQL Check
         run: |
-          psql -h localhost -U test -d amazon_data -c "SELECT version();"
+          docker exec postgres pg_isready
       - name: Setup PostgreSQL 13.1
         uses: Harmon758/postgresql-action@v1.0.0
         with:
