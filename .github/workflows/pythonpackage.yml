@@ -21,7 +21,7 @@ jobs:
     steps:
       - name: Set up PostgreSQL
         run: |
-          psql -h localhost -U postgres -c "CREATE DATABASE amazon_data;"
+            psql -h localhost -U test -d amazon_data -c "CREATE DATABASE amazon_data WITH OWNER test PASSWORD 'testpassword';"
       - name: Setup PostgreSQL 13.1
         uses: Harmon758/postgresql-action@v1.0.0
         with:
