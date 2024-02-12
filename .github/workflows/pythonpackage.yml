@@ -16,9 +16,8 @@ jobs:
           POSTGRES_USER: test
           POSTGRES_PASSWORD: testpassword
           POSTGRES_DB: amazon_data
-          PGPASSWORD: testpassword
         ports: ['5432:5432']
-        options: --health-cmd pg_isready --health-interval 10s --health-timeout 5s --health-retries
+        options: --health-cmd pg_isready --health-interval 10s --health-timeout 5s 
     steps: 
       - name: db_check
         run: docker exec postgres pg_isready
