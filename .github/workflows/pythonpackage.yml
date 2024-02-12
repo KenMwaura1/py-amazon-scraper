@@ -13,15 +13,16 @@ jobs:
       postgres:
         image: postgres:latest
         env:
-          PG_USER: test
+          POSTGRES_USER: test
           POSTGRES_PASSWORD: testpassword
-          PG_DB: amazon_data
+          POSTGRES_DB: amazon_data
+          PGPASSWORD: testpassword
         ports: ['5432:5432']
         options: --health-cmd pg_isready --health-interval 10s --health-timeout 5s --health-retries 5
     steps:
       - name: PostgreSQL Check
         run: |
-          psql -h localhost -U test -d amazon_data -pass testpassword -c "SELECT version();"
+          psql -h localhost -U test -d amazon_data -c "SELECT version();"
       - name: Setup PostgreSQL 13.1
         uses: Harmon758/postgresql-action@v1.0.0
         with:
