@@ -22,7 +22,7 @@ class AmzScraperPipeline:
             self.connection = psycopg2.connect(host=hostname, port=port, user=username, password=password,
                                                dbname=database)
         else:
-            self.connection = psycopg2.connect(host="0.0.0.0", port=5432, user="test", password="testpassword",
+            self.connection = psycopg2.connect(host="localhost", port=5432, user="test", password="testpassword",
                                                dbname="amazon_data")
 
         ## Create cursor, used to execute commands

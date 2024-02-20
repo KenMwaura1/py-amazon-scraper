@@ -7,8 +7,11 @@ on:
     branches: [ "dev","main" ]
 
 jobs:
-  db:
+  build:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: [3.8, 3.9, "3.10"]
     services:
       postgres:
         image: postgres:latest
@@ -20,16 +23,6 @@ jobs:
         ports: ['5432:5432']
         
         options: --health-cmd pg_isready --health-interval 10s --health-timeout 5s 
-    steps: 
-      - name: docker info
-        run: docker version
-  build:
-    needs: db
-    runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        python-version: [3.8, 3.9, "3.10"]
-
     steps:
       - uses: actions/checkout@v4
       - name: Set up Python ${{ matrix.python-version }}
@@ -47,17 +40,6 @@ jobs:
             flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
             # exit-zero treats all errors as warnings. The GitHub editor is 127 chars wide
             flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
-      - name: Setup PostgreSQL
-        uses: Harmon758/postgresql-action@v1.0.0
-        with:
-          # Version of PostgreSQL to use
-          postgresql version: 13.1
-          # POSTGRES_DB - name for the default database that is created
-          postgresql db: amazon_data
-          # POSTGRES_USER - create the specified user with superuser power
-          postgresql user: test
-          # POSTGRES_PASSWORD - superuser password
-          postgresql password: testpassword      
       - name: app-test
         run: |
           cd amz_scraper
