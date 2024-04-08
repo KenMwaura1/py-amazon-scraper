@@ -33,7 +33,7 @@ service-identity==24.1.0
 six==1.16.0
 tldextract==5.1.2
 Twisted==24.3.0
-typing_extensions==4.10.0
+typing_extensions==4.11.0
 urllib3==2.2.1
 w3lib==2.1.2
 zope.interface==6.2
