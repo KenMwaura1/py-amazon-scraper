@@ -36,4 +36,4 @@ Twisted==24.3.0
 typing_extensions==4.11.0
 urllib3==2.2.1
 w3lib==2.1.2
-zope.interface==6.3
+zope.interface==6.4
