@@ -1,5 +1,5 @@
 attrs==24.2.0
-Automat==22.10.0
+Automat==24.8.1
 certifi==2024.7.4
 cffi==1.17.0
 charset-normalizer==3.3.2
