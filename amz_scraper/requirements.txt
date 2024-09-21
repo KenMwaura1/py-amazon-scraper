@@ -1,7 +1,7 @@
 attrs==24.2.0
 Automat==24.8.1
 certifi==2024.8.30
-cffi==1.17.0
+cffi==1.17.1
 charset-normalizer==3.3.2
 constantly==23.10.4
 cryptography==43.0.1
