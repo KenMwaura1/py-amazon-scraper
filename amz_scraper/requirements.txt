@@ -18,8 +18,8 @@ packaging==24.1
 parsel==1.9.1
 Protego==0.3.1
 psycopg2-binary==2.9.9
-pyasn1==0.6.1
-pyasn1-modules==0.4.0
+pyasn1==0.6.0
+pyasn1-modules==0.4.1
 pycparser==2.22
 PyDispatcher==2.0.7
 pyOpenSSL==24.2.1
